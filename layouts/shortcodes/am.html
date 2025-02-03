@@ -1,0 +1,9 @@
+{{ if and (.Get "url") (not (.Get "i")) }}
+<iframe id="embedPlayer" src="https://embed.music.apple.com/us/album/{{ .Get "url" }}?app=music&amp;itsct=music_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
+
+{{ else if and (.Get "url") (.Get "i") }}
+<iframe id="embedPlayer" src="https://embed.music.apple.com/us/album/{{ .Get "url" }}?i={{ .Get "i" }}&amp;app=music&amp;itsct=music_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="175px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
+
+{{ else }}
+Missing URL parameter in Apple Music shortcode
+{{ end }}

@@ -1,0 +1,153 @@
+baseURL: "https://wdh.hk"
+title: Daaihang's Blog
+copyright: "© [Daaihang Wong](https://wdh.hk) [萌ICP备20252019号](https://icp.gov.moe/?keyword=20252019)"
+paginate: 8
+theme: PaperMod
+
+defaultContentLanguage: "zh"
+languageCode: "zh-cn" # 默认语言为中文
+hasCJKLanguage: true # 自动检测内容中的中文/日文/韩文
+
+enableRobotsTXT: true
+enableInlineShortcodes: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+googleAnalytics: 
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Daaihang's Blog
+  description: "Sec | Arts | Life"
+  keywords: [Blog, Portfolio, Tech]
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "2006-01-02"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowLastMod: true
+  ShowCopyRight: false
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  math: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+
+  assets:
+    disableFingerprinting: true
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: /favicon.svg
+
+  label:
+    text: "Daaihang's Blog"
+    icon: /favicon.svg
+    iconHeight: 35
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Hi, this is Daaihang's Blog.
+
+  socialIcons:
+    - name: email
+      url: "mailto:daaihang@qq.com"
+    - name: bilibili
+      url: "https://space.bilibili.com/3360850"
+    - name: github
+      url: "https://github.com/daaihang"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  editPost:
+    URL: "https://github.com/daaihang/myWebsite/tree/main/content"
+    Text: "源代码" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+  artalk:
+    server: 
+    site: 
+
+menu:
+  main:
+    # - name: 文章
+    #   url: archives
+    #   weight: 1
+    - name: 🎈日常
+      url: daily/
+      weight: 2
+    - name: 🧑‍💻开发
+      url: docs/
+      weight: 3
+    - name: 🔍搜索
+      url: search/
+      weight: 7
+    - identifier: tags
+      name: 🏷️标签
+      url: tags/
+      weight: 5
+    - identifier: categories
+      name: 📌分类
+      url: /categories/
+      weight: 6
+    - name: 🧑‍🤝‍🧑朋友
+      url: friend/
+      weight: 8
+    - name: 🫰关于
+      url: about/
+      weight: 9
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # HUGO 默认转义 Markdown 文件中的 HTML 代码，如需开启的话
+  highlight:
+    disableHLJS: true # to disable highlight.js
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    noClasses: false
+    pygmentsUseClasses: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary

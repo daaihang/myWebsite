@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-01-19T20:00:00+08:00</lastmod>
+    <lastmod>2025-02-04T00:48:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/daily/25-02/</loc>
+    <lastmod>2025-02-04T00:48:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-01-19T20:00:00+08:00</lastmod>

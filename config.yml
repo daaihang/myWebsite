@@ -32,6 +32,8 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
+  mainSections: ["docs", "daily"]  # 首页显示什么文件夹内的文章
+
   ShowLastMod: true
   ShowCopyRight: false
   ShowReadingTime: false

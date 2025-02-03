@@ -35,7 +35,7 @@ params:
   mainSections: ["docs", "daily"]  # 首页显示什么文件夹内的文章
 
   ShowLastMod: true
-  ShowCopyRight: false
+  ShowCopyRight: true
   ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true

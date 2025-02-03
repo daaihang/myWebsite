@@ -69,7 +69,12 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Hi, this is Daaihang's Blog.
+    Content: >
+      Sec | Arts | Life
+
+      - 本网站前一次于 2024 年 3 月 10 日改版，于 2024 年 10 月暂停修正。
+      
+      - 2025 年 2 月 2 日换新主题并逐步适配。具体更新故事可见[这里](/about/#20250203)。
 
   socialIcons:
     - name: email

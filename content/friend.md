@@ -28,7 +28,7 @@ showtoc = false
 
 这里的部落格很厉害，虽与博主暂无交集，但其文章仍值得时不时翻看学习。
 
-{{< friend name="大大的小蜗牛" url="https://www.eallion.com/" word="机会总是垂青于有准备的人！ - Louis Pasteur" reason="名为 Charles Chin 的电子商务 COO 大佬的博客。" logo="https://www.eallion.com/eallion.png" >}}
+{{< friend name="大大的小蜗牛" url="https://www.eallion.com/" word="机会总是垂青于有准备的人！ - Louis Pasteur" reason="名为 Charles Chin 的电子商务 COO 大佬的博客。" logo="https://www.eallion.com/images/eallion_hu_8b7204a743aeeb82.png" >}}
 
 {{< friend name="maintao" url="https://maintao.com/" word="闷道" reason="备案号 8 位的含金量，博文中富有生活情趣。博客十年，400多篇。" logo="https://maintao.com/favicon.ico" >}}
 

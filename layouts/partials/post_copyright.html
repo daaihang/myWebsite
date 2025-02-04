@@ -10,29 +10,43 @@
     background-color: var(--code-bg);
   "
 >
-  <!-- <h3>🐱如果您想要引用，请考虑如下格式：</h3>
+  <a>如果您想要引用，请考虑如下格式：</a>
   <div style="padding-top: 0.5em">
-    台运鹏. ({{ .Date | dateFormat "Jan. 2, 2006" }}). 《{{ .Title }}》[Blog
+    Daaihang Wong(王大恆). ({{ .Date | dateFormat "2006-01-02" }}). 《{{ .Title }}》[Blog
     post]. Retrieved from {{ .Permalink }}
   </div>
-  <div class="highlight">
+  <!-- <div class="highlight">
     <pre
       tabindex="0"
       class="chroma"
     ><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@online{blog-{{ .File.UniqueID }},
 </span></span><span class="line"><span class="cl">        title={{ printf "{%v}" .Title }},
-</span></span><span class="line"><span class="cl">        author={Yunpeng Tai},
+</span></span><span class="line"><span class="cl">        author={Daaihang Wong},
 </span></span><span class="line"><span class="cl">        year={{ printf "{%v}" $year }},
 </span></span><span class="line"><span class="cl">        month={{ printf "{%v}" $monthEnglish }},
 </span></span><span class="line"><span class="cl">        note={{ printf "{%v}" .Permalink }},
 </span></span><span class="line"><span class="cl">}
 </span></span></code></pre>
   </div> -->
-  <div style="padding-top: 0.2em;">
+  <div style="padding-top: 0.5em;">
     版权说明：自由转载-非商用-非衍生-保持署名（<a
       href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
       target="_blank"
-      >CC BY-NC-SA 4.0）</a
-    >
+    >CC BY-NC-SA 4.0）</a>
   </div>
+  
+  <!-- 文字和两张图放在同一行，垂直居中对齐 -->
+  <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 0.2em;">
+    <div style="flex-grow: 1; text-align: left;">
+      承诺上述系本人亲自创作·非电脑创作之作品。
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <a href="https://nonbot.org/pledged/view/9e202056-3cc3-4c00-94bd-d4dd683b76c6" target="_blank">
+        <img style="height:48px;" src="https://nonbot.org/images/nonbot_pledged_logo.svg" alt="Human-made Content">
+      </a>
+      <img style="height:32px;" src="../../Created-By-Human-Not-By-AI-Badge-black@2x.png">
+    </div>
+  </div>
+
+  <div>有关非 wdh.hk 控制或测试的独立网站的信息仅供参考，不代表 wdh.hk 的任何建议或保证。wdh.hk 对于第三方网站不承担任何责任。wdh.hk 对于第三方网站的准确性和可靠性不作任何担保。</div>
 </div>
